@@ -20,6 +20,7 @@ public class WebController implements WebMvcConfigurer {
     }
     @PostMapping("/")
     public String checkInfo(PersonForm personForm){
+        System.out.println("Results of the form");
         return "redirect:/results";
     }
 }
